@@ -1,10 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
-    
+
+    // defined event and function for dice button, get random advice
+
     const button = document.getElementById("btn1");
     button.addEventListener("click", getAdvice);
-
-    const voiceButton = document.getElementById("btn2");
-    voiceButton.addEventListener("click", speakAdvice);
 
     function getAdvice() {
         fetch("https://api.adviceslip.com/advice")
@@ -27,6 +26,24 @@ document.addEventListener("DOMContentLoaded", () => {
             });
     }
 
+    // defined event and function for voice button
+
+    const voiceButton = document.getElementById("btn2");
+    voiceButton.addEventListener("click", speakAdvice);
+
+    const speak = (message) => {
+        VoiceRSS.speech({
+            key: "52bfbd75e1c24955831329926a53c5ed",
+            src: message,
+            hl: "en-us",
+            v: "Nancy",
+            r: 0,
+            c: "mp3",
+            f: "22khz_16bit_stereo",
+            ssml: false,
+        });
+    };
+
     function speakAdvice() {
         const advicemsg = document.getElementById("2").innerText;
         speak(advicemsg);
@@ -34,15 +51,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-const speak = (message) => {
-    VoiceRSS.speech({
-        key: "52bfbd75e1c24955831329926a53c5ed",
-        src: message,
-        hl: "en-us",
-        v: "Nancy",
-        r: 0,
-        c: "mp3",
-        f: "22khz_16bit_stereo",
-        ssml: false,
-    });
-};
