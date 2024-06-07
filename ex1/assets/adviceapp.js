@@ -8,22 +8,22 @@ document.addEventListener("DOMContentLoaded", () => {
     function getAdvice() {
         fetch("https://api.adviceslip.com/advice")
             
-            .then((response) => response.json())
+        .then((response) => response.json())
 
-            .then((data) => {
-                let adviceData = data;
-                console.log(adviceData);
+        .then((data) => {
+            let adviceData = data;
+            console.log(adviceData);
 
-                const receivedadvice = data.slip.advice;
-                console.log(receivedadvice);
+            const receivedadvice = data.slip.advice;
+            console.log(receivedadvice);
 
-                const receivedid = data.slip.id;
-                console.log(receivedid);
+            const receivedid = data.slip.id;
+            console.log(receivedid);
 
-                document.getElementById("1").innerText =
-                    "ADVICE" + " # " + receivedid;
-                document.getElementById("2").innerText = receivedadvice;
-            });
+            document.getElementById("1").innerText =
+                "ADVICE" + " # " + receivedid;
+            document.getElementById("2").innerText = receivedadvice;
+        });
     }
 
     // defined event and function for voice button
