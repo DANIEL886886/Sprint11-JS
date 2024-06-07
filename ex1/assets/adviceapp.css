@@ -18,8 +18,8 @@ button {
        background-color: #d35648; color: black;
        font-style: bold;
        padding: 20px 20px 20px 20px;
-       border-radius: 70px;
-       margin-top: 360px ;
+       border-radius: 70px; border: 10px solid #313a49;
+       margin-top: 340px ;
 }
 
 .button:hover {
