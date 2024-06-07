@@ -1,53 +1,67 @@
 body {
-       max-width: 1800px;
-       background: #202632;
+    max-width: 1800px;
+    background: #202632;
 }
 
 .container {
-       display:flex; flex-direction: column;
-       align-items: center; text-align: center;
-       margin-top: 20vh; margin-left: 32%;
-       background-color: #313a49;
-       width: 600px; height: 50%;
-       border-radius: 70px;
-       padding: 10px 10px 10px 10px;
+    display:flex; flex-direction: column;
+    align-items: center; text-align: center;
+    margin-top: 20vh; margin-left: 32%;
+    background-color: #313a49;
+    width: 600px; height: 50%;
+    border-radius: 70px;
+    padding: 10px 10px 10px 10px;
 }
 
-button {
-       position:absolute;
-       background-color: #d35648; color: black;
-       font-style: bold;
-       padding: 20px 20px 20px 20px;
-       border-radius: 70px; border: 10px solid #313a49;
-       margin-top: 340px ;
+.dicebutton {
+    position:absolute;
+    background-color: #d38d85; color: black;
+    font-style: bold;
+    padding: 20px 20px 20px 20px;
+    border-radius: 70px; border: 10px solid #313a49;
+    margin-top: 340px ; margin-left: -200px;
 }
 
-.button:hover {
-  background-color: #90c96f;
-  transition: 0.7s;
+.voicebutton {
+    position:absolute;
+    background-color: #d38d85; color: black;
+    font-style: bold;
+    padding: 20px 20px 20px 20px;
+    border-radius: 70px; border: 10px solid #313a49;
+    margin-top: 340px ; margin-left: 200px;
+}
+
+.dicebutton:hover {
+    background-color: #90c96f;
+    transition: 0.9s;
+}
+
+.voicebutton:hover {
+    background-color: #8e409a;
+    transition: 0.9s;
 }
 
 .image1 {
-       padding-top: 20%;
-       margin-bottom: 10%;
+    padding-top: 20%;
+    margin-bottom: 10%;
 }
 
-.dicegif {
-       object-fit: cover; 
-       height: -20px;
-       width: 40px;
+.btnimage {
+    object-fit: cover; 
+    height: -20px;
+    width: 40px;
 }
 
 .adviceid {
-       font-size: 30px; text-decoration: dashed;
-       margin-top: 60px; padding: 10px 10px 10px 10px;
-       height:fit-content; width:fit-content;
-       color: rgb(56, 174, 119);
+    font-size: 30px; text-decoration: dashed;
+    margin-top: 60px; padding: 10px 10px 10px 10px;
+    height:fit-content; width:fit-content;
+    color: rgb(56, 174, 119);
 }
 
 .advicemsg {
-       font-size: 30px; text-decoration: dashed;
-       margin-top: 10px; padding: 10px 10px 10px 10px;
-       height:40px; width:fit-content;
-       color: rgb(255, 255, 255);
+    font-size: 30px; text-decoration: dashed;
+    margin-top: 10px; padding: 10px 10px 10px 10px;
+    height:40px; width:fit-content;
+    color: rgb(255, 255, 255);
 }
