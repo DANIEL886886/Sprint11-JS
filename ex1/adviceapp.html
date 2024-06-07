@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
     <head>
 
@@ -10,27 +9,28 @@
         <title> TEMA ADVICE APP </title> 
 
         <!-- link to the CSS file -->
-        <link rel="stylesheet" type="text/css" href="adviceapp.css">
+        <link rel="stylesheet" type="text/css" href="assets/adviceapp.css">
         
         <!-- link to the JS file -->
-        <script src="adviceapp.js"></script>
-    
+        <script src="assets/adviceapp.js"></script>
+        
+        <!-- Icons and links -->
+        <link rel="icon" type="image/png" href="assets/favicon.png">
+        <link href='https://unpkg.com/css.gg@2.0.0/icons/css/dice-6.css' rel='stylesheet'>
+        <script src="https://api.adviceslip.com/advice"></script>
+
     </head>
 
-<body>
+    <body>
 
-	<div class="body1" id="bd1">
+        <div class="container">
+            <textbox class="adviceid" id="1">ADVICE # 000</textbox>
+            <textbox class="advicemsg" id="2">Click the dice to get advice !</textbox>
+            
+            <div class="image"><img src="assets/model.svg"></div>
+            <button class="button" type="click" id="btn"><icon class="gg-dice-6"></icon></button>
+        </div>
 
-		<div class="group1">
+    </body>
 
-		<title1> If you want a random advice, then this is the place for you ! </title1>
-
-		<div class="btn"> 
-			<!-- X means class with the same caracteristics -->
-			<a href="#bd1" class="X btn-primary"> Get started</a>
-		</div>
-
-	</div>
-
-</body>
 </html>

@@ -1,0 +1,45 @@
+body {
+       max-width: 1800px;
+       background: #202632;
+}
+
+.container {
+       display:flex; flex-direction: column;
+       align-items: center; text-align: center;
+       margin-top: 20vh; margin-left: 35%;
+       background-color: #313a49;
+       width: 600px; height: 50%;
+       border-radius: 50px;
+}
+
+button {
+       position:absolute;
+       background-color: #9ad8aa; color: black;
+       font-style: bold;
+       padding: 20px 20px 20px 20px;
+       border-radius: 70px;
+       margin-top: 350px ;
+}
+
+.image {
+       padding-top: 20%;
+       margin-bottom: 10%;
+}
+
+.gg-dice-6{
+       scale: 1.5;
+}
+
+.adviceid {
+       font-size: 30px; text-decoration: dashed;
+       margin-top: 60px; padding: 10px 10px 10px 10px;
+       height:fit-content; width:fit-content;
+       color: rgb(56, 174, 119);
+}
+
+.advicemsg {
+       font-size: 30px; text-decoration: dashed;
+       margin-top: 10px; padding: 10px 10px 10px 10px;
+       height:40px; width:fit-content;
+       color: rgb(255, 255, 255);
+}
