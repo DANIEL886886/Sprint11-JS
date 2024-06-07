@@ -20,8 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const receivedid = data.slip.id;
             console.log(receivedid);
 
-            document.getElementById("1").innerText =
-                "ADVICE" + " # " + receivedid;
+            document.getElementById("1").innerText = "ADVICE" + " # " + receivedid;
             document.getElementById("2").innerText = receivedadvice;
         });
     }
