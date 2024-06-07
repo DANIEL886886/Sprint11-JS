@@ -50,6 +50,8 @@ body {
     object-fit: cover; 
     height: -20px;
     width: 40px;
+    background-color: transparent;
+    background-image: none;
 }
 
 .adviceid {

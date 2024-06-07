@@ -45,9 +45,16 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     function speakAdvice() {
-        const advicemsg = document.getElementById("2").innerText;
-        speak(advicemsg);
-    }
 
+        const adviceid = document.getElementById("1").innerText;
+        speak(adviceid);
+
+        const advicemsg = document.getElementById("2").innerText;
+        setTimeout(function () {
+            speak(advicemsg);
+        }, 2500);
+
+    }
+    
 });
 
