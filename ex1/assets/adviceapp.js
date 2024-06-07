@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     button.addEventListener("click", getAdvice);
 
     function getAdvice() {
+        
         fetch("https://api.adviceslip.com/advice")
             
         .then((response) => response.json())
