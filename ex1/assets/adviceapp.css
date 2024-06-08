@@ -1,16 +1,16 @@
 body {
-    max-width: 1800px;
-    background: #202632;
+  max-width: 1800px;
+  background: #202632;
 }
 
 .container {
-    display:flex; flex-direction: column;
-    align-items: center; text-align: center;
-    margin-top: 20vh; margin-left: 32%;
-    background-color: #313a49;
-    width: 600px; height: 50%;
-    border-radius: 70px; border: 2px solid transparent;
-    padding: 10px 10px 10px 10px;
+  display:flex; flex-direction: column;
+  align-items: center; text-align: center;
+  margin-top: 20vh; margin-left: 32%;
+  background-color: #313a49;
+  width: 600px; height: 50%;
+  border-radius: 70px; border: 2px solid transparent;
+  padding: 10px 10px 10px 10px;
 }
 
 .diceid-colorize {animation: diceid-color 2s ease-out;}
@@ -42,21 +42,21 @@ body {
 }
 
 .dicebutton {
-    position:absolute;
-    background-color: #313a49; color: black;
-    font-style: bold;
-    padding: 20px 20px 20px 20px;
-    border-radius: 70px; border: 2px solid #313a49;
-    margin-top: 340px ; margin-left: -200px;
+  position:absolute;
+  background-color: #313a49; color: black;
+  font-style: bold;
+  padding: 20px 20px 20px 20px;
+  border-radius: 70px; border: 2px solid #313a49;
+  margin-top: 340px ; margin-left: -200px;
 }
 
 .voicebutton {
-    position:absolute;
-    background-color: #313a49; color: black;
-    font-style: bold;
-    padding: 20px 20px 20px 20px;
-    border-radius: 70px; border: 2px solid #313a49;
-    margin-top: 340px ; margin-left: 200px;
+  position:absolute;
+  background-color: #313a49; color: black;
+  font-style: bold;
+  padding: 20px 20px 20px 20px;
+  border-radius: 70px; border: 2px solid #313a49;
+  margin-top: 340px ; margin-left: 200px;
 }
 
 .dicebtn-color {animation: dicebtnchange-background 3s forwards;}
@@ -66,28 +66,28 @@ body {
 @keyframes voicebtnchange-background {0% {background-color: #5c2c64;}100% {background-color: #313a49;}}
 
 .image1 {
-    padding-top: 20%;
-    margin-bottom: 10%;
+  padding-top: 20%;
+  margin-bottom: 10%;
 }
 
 .btnimage {
-    object-fit: cover; 
-    height: -20px;
-    width: 40px;
-    background-color: transparent;
-    background-image: none;
+  object-fit: cover; 
+  height: -20px;
+  width: 40px;
+  background-color: transparent;
+  background-image: none;
 }
 
 .adviceid {
-    font-size: 30px; text-decoration: dashed;
-    margin-top: 60px; padding: 10px 10px 10px 10px;
-    height:fit-content; width:fit-content;
-    color: white;
+  font-size: 30px; text-decoration: dashed;
+  margin-top: 60px; padding: 10px 10px 10px 10px;
+  height:fit-content; width:fit-content;
+  color: white;
 }
 
 .advicemsg {
-    font-size: 30px; text-decoration: dashed;
-    margin-top: 10px; padding: 10px 10px 10px 10px;
-    height:40px; width:fit-content;
-    color: rgb(255, 255, 255);
+  font-size: 30px; text-decoration: dashed;
+  margin-top: 10px; padding: 10px 10px 10px 10px;
+  height:40px; width:fit-content;
+  color: rgb(255, 255, 255);
 }

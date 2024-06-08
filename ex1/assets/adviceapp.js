@@ -93,32 +93,32 @@ document.addEventListener("DOMContentLoaded", () => {
             speak(advicemsg);
         }, 2500);
 
-    // let speech = null;
+        // let speech = null;
 
-    // using the windows voice integration in order to stop the voice is click outside voice btn
-    // function speakAdvice() {
-    //     const adviceid = document.getElementById("1").innerText;
-    //     speech = new SpeechSynthesisUtterance(adviceid);
-    //     window.speechSynthesis.speak(speech);
+        // using the windows voice integration in order to stop the voice is click outside voice btn
+        // function speakAdvice() {
+        //     const adviceid = document.getElementById("1").innerText;
+        //     speech = new SpeechSynthesisUtterance(adviceid);
+        //     window.speechSynthesis.speak(speech);
 
-    //     const advicemsg = document.getElementById("2").innerText;
-    //     setTimeout(function () {
-    //         speech = new SpeechSynthesisUtterance(advicemsg);
-    //         window.speechSynthesis.speak(speech);
-    //     }, 2500);
-    
+        //     const advicemsg = document.getElementById("2").innerText;
+        //     setTimeout(function () {
+        //         speech = new SpeechSynthesisUtterance(advicemsg);
+        //         window.speechSynthesis.speak(speech);
+        //     }, 2500);
+        
 
-    //     document.addEventListener("click", function (event) {
-    //         if (
-    //             !event.target.classList.contains("btn2") &&
-    //             !event.target.closest(".btn2")
-    //         ) {
-    //             if (speech) {
-    //                 window.speechSynthesis.cancel();
-    //                 speech = null;
-    //             }
-    //         }
-    //     });
+        //     document.addEventListener("click", function (event) {
+        //         if (
+        //             !event.target.classList.contains("btn2") &&
+        //             !event.target.closest(".btn2")
+        //         ) {
+        //             if (speech) {
+        //                 window.speechSynthesis.cancel();
+        //                 speech = null;
+        //             }
+        //         }
+        //     });
 
         // animate the border on JSON response
         const container = document.querySelector(".container");
