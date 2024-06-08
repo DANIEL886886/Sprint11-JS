@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    
 
     // defined event and function for dice button, get random advice
 
@@ -20,13 +19,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 const receivedid = data.slip.id;
                 console.log(receivedid);
 
-                document.getElementById("1").innerText =
-                    "ADVICE" + " # " + receivedid;
+                document.getElementById("1").innerText = "ADVICE" + " # " + receivedid;
                 document.getElementById("2").innerText = receivedadvice;
             });
-        
+
         // animate the border on JSON response
-        const container = document.querySelector(".container")
+        const container = document.querySelector(".container");
         container.classList.add("animate-border-dice");
         // Remove the class after animation is complete
         container.addEventListener("animationend", () => {
@@ -42,7 +40,30 @@ document.addEventListener("DOMContentLoaded", () => {
         diceid.addEventListener("animationend", () => {
             diceid.classList.remove("diceid-colorize");
         });
-    }
+        const dicebtncolor = document.getElementById("btn1");
+        dicebtncolor.classList.add("dicebtn-color");
+        dicebtncolor.addEventListener("animationend", () => {
+            dicebtncolor.classList.remove("dicebtn-color");
+        });
+
+        const img = document.getElementById("btnimage");
+        const staticImages = [
+            "assets/1.png",
+            "assets/2.png",
+            "assets/3.png",
+            "assets/4.png",
+            "assets/5.png",
+            "assets/6.png",
+        ];
+
+        const randomIndex = Math.floor(Math.random() * staticImages.length);
+        img.src = staticImages[randomIndex];
+
+        setTimeout(() => {
+            img.src = "assets/dice-game.gif";
+        }, 1500);
+            
+    };
 
     // defined event and function for voice button
 
@@ -87,6 +108,11 @@ document.addEventListener("DOMContentLoaded", () => {
         voiceid.classList.add("voiceid-colorize");
         voiceid.addEventListener("animationend", () => {
             voiceid.classList.remove("voiceid-colorize");
+        });
+        const voicebtncolor = document.getElementById("btn2");
+        voicebtncolor.classList.add("voicebtn-color");
+        voicebtncolor.addEventListener("animationend", () => {
+            voicebtncolor.classList.remove("voicebtn-color");
         });
     }
 

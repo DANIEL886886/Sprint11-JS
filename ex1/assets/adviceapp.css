@@ -59,15 +59,11 @@ body {
     margin-top: 340px ; margin-left: 200px;
 }
 
-.dicebutton:hover {
-    background-color: #4f713b;
-    transition: 0.9s;
-}
+.dicebtn-color {animation: dicebtnchange-background 3s forwards;}
+@keyframes dicebtnchange-background {0% {background-color: #4f713b;}100% {background-color: #d38d85;}}
 
-.voicebutton:hover {
-    background-color: #5c2c64;
-    transition: 0.9s;
-}
+.voicebtn-color {animation: voicebtnchange-background 3s forwards;}
+@keyframes voicebtnchange-background {0% {background-color: #5c2c64;}100% {background-color: #d38d85;}}
 
 .image1 {
     padding-top: 20%;
