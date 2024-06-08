@@ -20,7 +20,7 @@ body {
 @keyframes voiceid-color {0% {color:white;}50% {color: rgb(211, 13, 218);}100% {color: white;}}
 
 .animate-border-dice {
-  animation: colorize-border-dice 2s ease-out;
+  animation: colorize-border-dice 2.5s ease-out;
   animation-fill-mode: forwards;
 }
 
@@ -31,7 +31,7 @@ body {
 }
 
 .animate-border-voice {
-  animation: colorize-border-voice 2s ease-out;
+  animation: colorize-border-voice 2.5s ease-out;
   animation-fill-mode: forwards;
 }
 
@@ -43,7 +43,7 @@ body {
 
 .dicebutton {
     position:absolute;
-    background-color: #d38d85; color: black;
+    background-color: #313a49; color: black;
     font-style: bold;
     padding: 20px 20px 20px 20px;
     border-radius: 70px; border: 2px solid #313a49;
@@ -52,7 +52,7 @@ body {
 
 .voicebutton {
     position:absolute;
-    background-color: #d38d85; color: black;
+    background-color: #313a49; color: black;
     font-style: bold;
     padding: 20px 20px 20px 20px;
     border-radius: 70px; border: 2px solid #313a49;
@@ -60,10 +60,10 @@ body {
 }
 
 .dicebtn-color {animation: dicebtnchange-background 3s forwards;}
-@keyframes dicebtnchange-background {0% {background-color: #4f713b;}100% {background-color: #d38d85;}}
+@keyframes dicebtnchange-background {0% {background-color: #4f713b;}100% {background-color: #313a49;}}
 
 .voicebtn-color {animation: voicebtnchange-background 3s forwards;}
-@keyframes voicebtnchange-background {0% {background-color: #5c2c64;}100% {background-color: #d38d85;}}
+@keyframes voicebtnchange-background {0% {background-color: #5c2c64;}100% {background-color: #313a49;}}
 
 .image1 {
     padding-top: 20%;
