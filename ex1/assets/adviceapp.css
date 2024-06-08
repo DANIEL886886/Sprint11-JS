@@ -25,16 +25,9 @@ body {
 }
 
 @keyframes colorize-border-dice {
-  0% {
-    border-color: transparent;
-  }
-  50% {
-    border-color: lime;
-  }
-  100% {
-    border-color: transparent;
-    border-radius: 70px;
-  }
+  0% {border-color: transparent;}
+  50% {border-color: lime;}
+  100% {border-color: transparent;border-radius: 70px;}
 }
 
 .animate-border-voice {
@@ -43,16 +36,9 @@ body {
 }
 
 @keyframes colorize-border-voice {
-  0% {
-    border-color: transparent;
-  }
-  50% {
-    border-color: rgb(190, 76, 208);
-  }
-  100% {
-    border-color: transparent;
-    border-radius: 70px;
-  }
+  0% {border-color: transparent;}
+  50% {border-color: rgb(190, 76, 208);}
+  100% {border-color: transparent;border-radius: 70px;}
 }
 
 .dicebutton {
