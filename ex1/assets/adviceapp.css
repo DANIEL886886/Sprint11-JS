@@ -9,8 +9,50 @@ body {
     margin-top: 20vh; margin-left: 32%;
     background-color: #313a49;
     width: 600px; height: 50%;
-    border-radius: 70px;
+    border-radius: 70px; border: 2px solid transparent;
     padding: 10px 10px 10px 10px;
+}
+
+.diceid-colorize {animation: diceid-color 2s ease-out;}
+@keyframes diceid-color {0% {color:white;}50% {color: rgb(20, 181, 23);}100% {color: white;}}
+
+.voiceid-colorize {animation: voiceid-color 2s ease-out;}
+@keyframes voiceid-color {0% {color:white;}50% {color: rgb(211, 13, 218);}100% {color: white;}}
+
+.animate-border-dice {
+  animation: colorize-border-dice 2s ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes colorize-border-dice {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: lime;
+  }
+  100% {
+    border-color: transparent;
+    border-radius: 70px;
+  }
+}
+
+.animate-border-voice {
+  animation: colorize-border-voice 2s ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes colorize-border-voice {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(190, 76, 208);
+  }
+  100% {
+    border-color: transparent;
+    border-radius: 70px;
+  }
 }
 
 .dicebutton {
@@ -18,7 +60,7 @@ body {
     background-color: #d38d85; color: black;
     font-style: bold;
     padding: 20px 20px 20px 20px;
-    border-radius: 70px; border: 10px solid #313a49;
+    border-radius: 70px; border: 2px solid #313a49;
     margin-top: 340px ; margin-left: -200px;
 }
 
@@ -27,17 +69,17 @@ body {
     background-color: #d38d85; color: black;
     font-style: bold;
     padding: 20px 20px 20px 20px;
-    border-radius: 70px; border: 10px solid #313a49;
+    border-radius: 70px; border: 2px solid #313a49;
     margin-top: 340px ; margin-left: 200px;
 }
 
 .dicebutton:hover {
-    background-color: #90c96f;
+    background-color: #4f713b;
     transition: 0.9s;
 }
 
 .voicebutton:hover {
-    background-color: #8e409a;
+    background-color: #5c2c64;
     transition: 0.9s;
 }
 
@@ -58,7 +100,7 @@ body {
     font-size: 30px; text-decoration: dashed;
     margin-top: 60px; padding: 10px 10px 10px 10px;
     height:fit-content; width:fit-content;
-    color: rgb(56, 174, 119);
+    color: white;
 }
 
 .advicemsg {
