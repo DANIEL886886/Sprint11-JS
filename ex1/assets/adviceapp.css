@@ -134,6 +134,7 @@ body {
 .container1 {margin-top: -43%; margin-left: 15%;scale:0.5}
 .dicebutton {margin-right: 30px;padding: 5px 5px 5px 5px}
 .voicebutton {padding: 2px 2px 2px 2px}
+}
 
 @media only screen and (max-width: 184px) {
 .container {margin-left: 20%;margin-top:50%;width:40%; height:75vh; justify-content: flex-start;}
