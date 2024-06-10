@@ -79,49 +79,17 @@ document.addEventListener("DOMContentLoaded", () => {
             ssml: false,
         });
     };
-    //code for the voice api (limited number of api import data)
-    // function speakAdvice() {
-
-    // const adviceid = document.getElementById("1").innerText;
-    // speak(adviceid);
-
-    // const advicemsg = document.getElementById("2").innerText;
-    // setTimeout(function () {
-    //     speak(advicemsg);
-    // }, 2500);
-
-    //using the windows voice integration in order to stop the voice if click outside voice btn
+    
+    // code for the voice api (limited number of api import data)
     function speakAdvice() {
 
-        let speech = null;
-
         const adviceid = document.getElementById("1").innerText;
-        // the voice reads also the id only when i putted inside a function like the one with setTimeout()
-        setTimeout(function () {
-            speech = new SpeechSynthesisUtterance(adviceid);
-            window.speechSynthesis.speak(speech);
-        }, 500);
+        speak(adviceid);
 
         const advicemsg = document.getElementById("2").innerText;
         setTimeout(function () {
-            speech = new SpeechSynthesisUtterance(advicemsg);
-            window.speechSynthesis.speak(speech);
+            speak(advicemsg);
         }, 2500);
-
-        // stop function when click outside an object wich doesn`t have the class=".btn2"
-        document.addEventListener("click", function (event) {
-            if (
-                (!event.target.classList.contains("btn2") &&
-                    !event.target.closest(".btn2")) ||
-                event.target.classList.contains("btn1") ||
-                event.target.closest(".btn1")
-            ) {
-                if (speech) {
-                    window.speechSynthesis.cancel();
-                    speech = null;
-                }
-            }
-        });
 
         // animate the border on JSON response
         const container = document.querySelector(".container");
