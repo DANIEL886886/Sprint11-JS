@@ -99,15 +99,47 @@ body {
 .container{height:500px}
 .image1 {  padding-top: 250px; margin-bottom: 10%; scale: 0.4;}
 .container1 {margin-left: %;margin-top: -10%;}
-.dicebutton {margin-right: 0px;padding: 5px 5px 5px 5px}
+.dicebutton {margin-right: 40px;padding: 5px 5px 5px 5px}
 .voicebutton {padding: 2px 2px 2px 2px}
 }
 
 /* Responsive / Adjustments for smaller screens (e.g., mobile phones) -------------------------------------------------------- */
-@media only screen and (max-width: 600px) {
-.container {width:40%; height:100vh; justify-content: flex-start;}
+@media only screen and (max-width: 650px) {
+.container {margin-top:20%; width:40%; height:80vh; justify-content: flex-start;}
 .container1 {margin-top: -20%; margin-left: 4%;}
+.dicebutton {margin-right: 30px;padding: 5px 5px 5px 5px}
+.voicebutton {padding: 2px 2px 2px 2px}
+.image1 {  padding-top: 500px; margin-bottom: 10%; scale: 0.3;}
+}
+
+@media only screen and (max-width: 380px) {
+.container {margin-top:30%;width:40%; height:75vh; justify-content: flex-start;}
+.container1 {margin-top: -29%; margin-left: 7%;flex-direction: column;}
+.adviceid {font-size: 13px;}
+.advicemsg {font-size: 20px;}
+.dicebutton {margin-right: 10px;padding: 5px 5px 5px 5px}
+.voicebutton {padding: 2px 2px 2px 2px}
+.image1 { padding-top: 550px; margin-bottom: 2%; scale: 0.15;}
+}
+
+@media only screen and (max-width: 305px) {
+.container {margin-top:30%;width:40%; height:75vh; justify-content: flex-start;}
+.container1 {margin-top: -40%; margin-left: 7%;scale:0.5}
+.dicebutton {margin-right: 30px;padding: 5px 5px 5px 5px}
+.voicebutton {padding: 2px 2px 2px 2px}
+}
+
+@media only screen and (max-width: 250px) {
+.container {margin-top:30%;width:40%; height:75vh; justify-content: flex-start;}
+.container1 {margin-top: -43%; margin-left: 15%;scale:0.5}
+.dicebutton {margin-right: 30px;padding: 5px 5px 5px 5px}
+.voicebutton {padding: 2px 2px 2px 2px}
+
+@media only screen and (max-width: 184px) {
+.container {margin-left: 20%;margin-top:50%;width:40%; height:75vh; justify-content: flex-start;}
+.container1 {margin-left: -4%;margin-top: -80%;justify-content: center;}
 .dicebutton {margin-right: 0px;padding: 5px 5px 5px 5px}
 .voicebutton {padding: 2px 2px 2px 2px}
-.image1 {  padding-top: 600px; margin-bottom: 10%; scale: 0.3;}
+.adviceid {font-size: 13px;}
+.advicemsg {font-size: 15px;}
 }

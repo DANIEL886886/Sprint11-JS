@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
     //     speak(advicemsg);
     // }, 2500);
 
-    //using the windows voice integration in order to stop the voice is click outside voice btn
+    //using the windows voice integration in order to stop the voice if click outside voice btn
     function speakAdvice() {
 
         let speech = null;
