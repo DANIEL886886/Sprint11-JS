@@ -60,7 +60,8 @@ document.addEventListener("DOMContentLoaded", () => {
             img.src = "assets/dice-game.gif";
         }, 1500);
     }
-
+    
+    //....................................................................
     // defined event and function for voice button
     const voiceButton = document.getElementById("btn2");
     voiceButton.addEventListener("click", speakAdvice);
