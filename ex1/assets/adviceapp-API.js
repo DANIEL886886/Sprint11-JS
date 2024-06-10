@@ -60,11 +60,14 @@ document.addEventListener("DOMContentLoaded", () => {
             img.src = "assets/dice-game.gif";
         }, 1500);
     }
-    
+
     //....................................................................
     // defined event and function for voice button
     const voiceButton = document.getElementById("btn2");
     voiceButton.addEventListener("click", speakAdvice);
+
+    let currentAudioElement = null;
+    let documentClickListener = null;
 
     //VOICE API CODE
     const speak = (message) => {
@@ -77,12 +80,18 @@ document.addEventListener("DOMContentLoaded", () => {
             c: "mp3",
             f: "22khz_16bit_stereo",
             ssml: false,
+            onready: (audio) => {
+                currentAudioElement = document.createElement("audio");
+                currentAudioElement.src = audio.src;
+                currentAudioElement.play();
+                addDocumentClickListener();
+            },
         });
     };
-    
+
     // code for the voice api (limited number of api import data)
     function speakAdvice() {
-
+        
         const adviceid = document.getElementById("1").innerText;
         speak(adviceid);
 
@@ -90,6 +99,29 @@ document.addEventListener("DOMContentLoaded", () => {
         setTimeout(function () {
             speak(advicemsg);
         }, 2500);
+
+        // stop function when click outside an object wich doesn`t have the class=".btn2"
+        document.addEventListener("click", function (e) {
+            if (
+                (!e.target.classList.contains("btn2") &&
+                    !e.target.closest(".btn2")) ||
+                e.target.classList.contains("btn1") ||
+                e.target.closest(".btn1")
+            ) {
+                if (currentAudioElement) {
+                    try {
+                        currentAudioElement.pause();
+                        currentAudioElement.src = "";
+                        currentAudioElement = null;
+                    } catch (error) {
+                        console.error("Error pausing audio:", error);
+                        throw error;
+                    }
+                }
+                document.removeEventListener("click", documentClickListener);
+            };
+            document.addEventListener("click", documentClickListener);
+        });
 
         // animate the border on JSON response
         const container = document.querySelector(".container");
