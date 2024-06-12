@@ -1,0 +1,146 @@
+body {
+  max-width: 1800px;
+  background: #202632;
+}
+
+.container {
+  display:flex; flex-direction: column;
+  justify-content: center;align-items: center; text-align: center;
+  margin-top: 20vh; margin-left: 30%;
+  background-color: #313a49;
+  max-width:40%; height:400px;
+  border-radius: 70px; border: 3px solid #363e4d;
+  padding: 10px 10px 10px 10px;
+}
+
+.container1 {
+  display:flexbox;
+  align-items: center; text-align: center;
+  margin-top: -3%; margin-left: 1.5%;
+}
+
+.dice-animation {
+  animation: dice-animation 2s ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes dice-animation {
+  0% {border-color: transparent;}
+  50% {border-color: lime;}
+  100% {border-color: transparent;border-radius: 70px;}
+}
+
+.diceid-colorize {animation: diceid-color 2s ease-out;}
+@keyframes diceid-color {0% {color:white;}50% {color: rgb(20, 181, 23);}100% {color: white;}}
+
+.voiceid-colorize {animation: voiceid-color 2s ease-out;}
+@keyframes voiceid-color {0% {color:white;}50% {color: rgb(211, 13, 218);}100% {color: white;}}
+
+.animate-border-dice {
+  animation: colorize-border-dice 2s ease-out;
+  animation-fill-mode: forwards;
+}
+
+.animate-border-voice {
+  animation: colorize-border-voice 2s ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes colorize-border-voice {
+  0% {border-color: transparent;}
+  50% {border-color: rgb(190, 76, 208);}
+  100% {border-color: transparent;border-radius: 70px;}
+}
+
+.dicebutton {
+  background-color: #313a49; color: black;
+  font-style: bold;
+  padding: 20px 20px 20px 20px;
+  border-radius: 70px; border: 4px solid #363e4d;
+  margin-right: 10%;
+}
+
+.voicebutton {
+  background-color: #313a49; color: black;
+  font-style: bold;
+  padding: 20px 20px 20px 20px;
+  border-radius: 70px; border: 4px solid #363e4d;
+}
+
+.image1 {
+  padding-top: 20%;
+  margin-bottom: 10%;
+}
+
+.btnimage {
+  object-fit: cover; 
+  height: -20px;
+  width: 40px;
+  background-color: transparent;
+  background-image: none;
+}
+
+.adviceid {
+  font-size: 30px; text-decoration: dashed;
+  margin-top: 60px; padding: 10px 10px 10px 10px;
+  height:fit-content; width:fit-content;
+  color: white;
+}
+
+.advicemsg {
+  font-size: 30px; text-decoration: dashed;
+  margin-top: 10px; padding: 10px 10px 10px 10px;
+  height:40px; width:fit-content;
+  color: rgb(255, 255, 255);
+}
+
+/* Responsive / Adjustments for smaller screens (e.g., mobile phones) -------------------------------------------------------- */
+@media only screen and (max-width: 1100px) {
+.container{height:500px}
+.image1 {  padding-top: 250px; margin-bottom: 10%; scale: 0.4;}
+.container1 {margin-left: %;margin-top: -10%;}
+.dicebutton {margin-right: 40px;padding: 5px 5px 5px 5px}
+.voicebutton {padding: 2px 2px 2px 2px}
+}
+
+/* Responsive / Adjustments for smaller screens (e.g., mobile phones) -------------------------------------------------------- */
+@media only screen and (max-width: 650px) {
+.container {margin-top:20%; width:40%; height:80vh; justify-content: flex-start;}
+.container1 {margin-top: -20%; margin-left: 4%;}
+.dicebutton {margin-right: 30px;padding: 5px 5px 5px 5px}
+.voicebutton {padding: 2px 2px 2px 2px}
+.image1 {  padding-top: 500px; margin-bottom: 10%; scale: 0.3;}
+}
+
+@media only screen and (max-width: 380px) {
+.container {margin-top:30%;width:40%; height:75vh; justify-content: flex-start;}
+.container1 {margin-top: -29%; margin-left: 7%;flex-direction: column;}
+.adviceid {font-size: 13px;}
+.advicemsg {font-size: 20px;}
+.dicebutton {margin-right: 10px;padding: 5px 5px 5px 5px}
+.voicebutton {padding: 2px 2px 2px 2px}
+.image1 { padding-top: 550px; margin-bottom: 2%; scale: 0.15;}
+}
+
+@media only screen and (max-width: 305px) {
+.container {margin-top:30%;width:40%; height:75vh; justify-content: flex-start;}
+.container1 {margin-top: -40%; margin-left: 7%;scale:0.5}
+.dicebutton {margin-right: 30px;padding: 5px 5px 5px 5px}
+.voicebutton {padding: 2px 2px 2px 2px}
+}
+
+@media only screen and (max-width: 250px) {
+.container {margin-top:30%;width:40%; height:75vh; justify-content: flex-start;}
+.container1 {margin-top: -43%; margin-left: 15%;scale:0.5}
+.dicebutton {margin-right: 30px;padding: 5px 5px 5px 5px}
+.voicebutton {padding: 2px 2px 2px 2px}
+}
+
+@media only screen and (max-width: 184px) {
+.container {margin-left: 20%;margin-top:50%;width:40%; height:75vh; justify-content: flex-start;}
+.container1 {margin-left: -4%;margin-top: -80%;justify-content: center;}
+.dicebutton {margin-right: 0px;padding: 5px 5px 5px 5px}
+.voicebutton {padding: 2px 2px 2px 2px}
+.adviceid {font-size: 13px;}
+.advicemsg {font-size: 15px;}
+}

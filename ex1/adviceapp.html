@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> TEMA ADVICE APP </title> 
+
+        <!-- link to the CSS file -->
+        <link rel="stylesheet" type="text/css" href="assets/adviceapp.css">
+        
+        <!-- link to the JS file !! (change the name to 
+         adviceapp-OS to use the OS voice or
+         adviceapp-API to use the API voice) -->
+        <script src="assets/adviceapp-OS.js"></script>
+        
+        <!-- Icons and gifs -->
+        <link rel="icon" type="image/png" href="assets/favicon.png">
+        <link href='https://unpkg.com/css.gg@2.0.0/icons/css/dice-6.css' rel='stylesheet'>
+        
+        <!-- Usefull scripts -->
+        <script src="https://api.adviceslip.com/advice"></script>
+        <script src="assets/voicerss-tts.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <div class="container" id="contain">
+
+            <textbox class="adviceid" id="1">ADVICE # 000</textbox>
+            <textbox class="advicemsg" id="2">Click the dice to get advice !</textbox>
+            <div class="image1"><img src="assets/model.svg"></div>
+            
+        </div>
+        
+        <div class="container1">
+
+            <button class="dicebutton" type="click" id="btn1"></icon><img src="assets/dice-game.gif" id="btnimage" class="btnimage"></button>
+            <button class="voicebutton" type="click" id="btn2"></icon><img src="assets/voice.ico" class="btnimage"></button>
+        
+        </div>
+
+    </body>
+
+</html>
